@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dog Mate</title>
 
     <link rel="stylesheet" href="css/styles.css" />
@@ -23,11 +24,6 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
@@ -37,6 +33,11 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -44,7 +45,7 @@
       <!-- Nav Bar -->
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="">dogMate</a>
+          <a class="navbar-brand" href="#title">dogMate</a>
 
           <button
             class="navbar-toggler"
@@ -58,13 +59,13 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#cta">Download</a>
               </li>
             </ul>
           </div>
@@ -73,19 +74,19 @@
         <!-- Title -->
 
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6">
             <h1 id="main-head">Meet new and interesting dogs nearby.</h1>
             <button
               class="btn btn-outline-dark btn-lg button-style"
               type="button"
             >
-              <i class="fab fa-apple"></i>  Download
+              <i class="fab fa-apple"></i> Download
             </button>
-            <button class="btn btn-outline-light btn-lg" type="button">
-              <i class="fab fa-google-play"></i>  Download
+            <button class="btn btn-outline-light btn-lg button-style" type="button">
+              <i class="fab fa-google-play"></i> Download
             </button>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6">
             <img
               class="title-img"
               src="images/iphone6.png"
@@ -99,6 +100,7 @@
     <!-- Features -->
 
     <section id="features">
+      <div class="container-fluid">
       <div class="row">
         <div class="features-boxes col-lg-4">
           <i class="fas icon fa-check-circle fa-3x"></i>
@@ -116,6 +118,7 @@
           <p>Find the love of your dog's life or your money back.</p>
         </div>
       </div>
+    </div>
     </section>
 
     <!-- Testimonials -->
@@ -135,7 +138,7 @@
             <em>Pebbles, New York</em>
           </div>
           <div class="carousel-item active">
-            <h2 class="testimonial-text">
+            <h2 class="testih2">
               My dog used to be so lonely, but with TinDog's help, they've found
               the love of their life. I think.
             </h2>
@@ -143,7 +146,7 @@
               class="testimonial-image"
               src="images/lady-img.jpg"
               alt="lady-profile"
-              style="border-radius:100%"
+              style="border-radius: 100%"
             />
             <em>Beverly, Illinois</em>
           </div>
@@ -182,14 +185,13 @@
     <!-- Pricing -->
 
     <section id="pricing">
-      <div class="price-head">
+      <div class="price-head container-fluid">
         <h2 class="price-head2">A Plan for Every Dog's Needs</h2>
         <p>Simple and affordable price plans for your and your dog.</p>
       </div>
-      <div class="row ">
+      <div class="row container-fluid">
         <div
           class="mainpricing card text-center col-lg-4 col-md-6"
-          style="width: 18rem;"
         >
           <h3 class="card-header">Chihuahua</h3>
           <div class="card-body">
@@ -202,7 +204,6 @@
         </div>
         <div
           class="mainpricing card text-center col-lg-4 col-md-6"
-          style="width: 18rem;"
         >
           <h3 class="card-header">Labrador</h3>
           <div class="card-body">
@@ -213,11 +214,11 @@
             <button class="class-footer btn btn-outline-dark" type="button">Sign Up</button>
           </div>
         </div>
-        <div class="mainpricing card text-center col-lg-4 " style="width: 18rem;">
+        <div class="mainpricing card text-center col-lg-4">
           <h3 class="card-header">Mastiff</h3>
           <div class="card-body">
             <h2>$99 / mo</h2>
-            <p>Pirority Listing</p>
+            <p>Priority Listing</p>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
@@ -230,16 +231,16 @@
     <!-- Call to Action -->
 
     <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button class="last-btn btn btn-outline-dark" type="button"><i class="fab fa-apple"></i> Download</button>
-      <button class="last-btn btn btn-outline-dark" type="button"><i class="fab fa-google-play"></i> Download</button>
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button class="last-btn btn btn-dark btn-lg" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="last-btn btn btn-light btn-lg" type="button"><i class="fab fa-google-play"></i> Download</button>
     </section>
 
     <!-- Footer -->
 
     <footer id="footer">
-      <p class ="para">© Copyright 2019 dogMate</p>
-      <p class ="para-1">Created by  @Xyro_strom</p>
+      <p class ="para">© Copyright 2026 dogMate</p>
+      <p class ="para-1">Created by @Xyro_strom</p>
     </footer>
   </body>
 </html>
